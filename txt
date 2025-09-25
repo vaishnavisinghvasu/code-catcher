@@ -1,0 +1,104 @@
+# Code Catcher Game
+
+A fun educational game built with Pygame where players catch correct code snippets and avoid bugs!
+
+## Game Overview
+
+In Code Catcher, you control a catcher at the bottom of the screen. Your mission is to catch falling code snippets that have correct syntax while avoiding buggy code. As you progress through levels, the code becomes more complex and falls faster!
+
+## Features
+
+- Engaging gameplay that teaches code syntax recognition
+- Progressive difficulty with increasing levels
+- Particle effects and visual feedback
+- Sound effects for game events
+- Animated UI elements
+- Tutorial mode for new players
+
+## How to Play
+
+1. Use the LEFT and RIGHT arrow keys to move your code catcher
+2. Catch correct code snippets (green) to earn points
+3. Avoid catching buggy code (red with X icon)
+4. Missing 5 correct snippets or catching 5 bugs ends the game
+5. Level up after every 10 points
+6. Press ESC during gameplay to pause
+
+## Installation
+
+1. Make sure you have Python 3.x and Pygame installed
+```
+pip install pygame
+```
+
+2. Clone or download this repository
+3. Create the required directories structure:
+```
+assets/
+  fonts/
+  images/
+  sounds/
+```
+
+4. Run the game:
+```
+python main.py
+```
+
+## Game Files
+
+- `main.py` - The entry point for the game
+- `game.py` - Main game logic and state management
+- `player.py` - Player character class
+- `falling_object.py` - Code snippets that fall from the top
+- `settings.py` - Game configuration and constants
+
+## Fonts
+
+The game looks for the following fonts in the `assets/fonts` directory:
+- Roboto-Regular.ttf
+- Roboto-Bold.ttf
+- RobotoMono-Regular.ttf
+
+If these fonts are not found, the game will fall back to system fonts.
+
+## Sound Effects
+
+For the best experience, add the following sound files to the `assets/sounds` directory:
+- game_start.mp3
+- game_over.mp3
+- correct.wav
+- bug.wav
+- levelup.wav
+- hover.wav
+- click.wav
+
+## Images
+
+The game will look for these optional images:
+- `assets/logo.png` - Game logo for the menu
+- `assets/catcher.png` - Player character sprite
+
+If these images are not found, the game will use generated graphics instead.
+
+## Customization
+
+You can modify various game settings in the `settings.py` file:
+- Screen dimensions
+- Colors
+- Font sizes
+- Difficulty levels
+- Sound volumes
+
+## Development
+
+Feel free to extend the game with new features such as:
+- New code snippets for different programming languages
+- Power-ups and special abilities
+- High score leaderboard
+- Additional game modes
+- More complex code challenges
+
+Enjoy playing and learning with Code Catcher!
+
+
